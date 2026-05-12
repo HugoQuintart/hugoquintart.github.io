@@ -96,7 +96,7 @@ Expérimentations autour :
 ---
 
 ## Expérience
-Voir mon [CV](/resources/CV.pdf)
+Voir mon [CV](/resources/New_CV.pdf)
 ### I-care — Étudiant en R&D IIoT / Production
 *Août 2024 · Novembre 2024 · Juillet – Septembre 2025 · Août 2026*
 
