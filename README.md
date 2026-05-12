@@ -1,6 +1,6 @@
 # Hugo Quintart
 
-🎓 Étudiant en ingénierie à la :contentReference[oaicite:0]{index=0}  
+🎓 Étudiant en ingénierie à la Faculté Polytechnique de Mons  
 💻 Passionné par l’électronique embarquée, les systèmes low-level et le competitive programming  
 ⚡ Intéressé par les technologies embarquées, l’IoT, Linux et le développement en C/C++
 
@@ -8,26 +8,28 @@
 
 ## À propos de moi
 
-Je suis actuellement étudiant en bachelier en sciences de l’ingénieur à la :contentReference[oaicite:1]{index=1}.  
+Je suis actuellement étudiant en première bachelier en sciences de l’ingénieur à la Faculté Polytechnique de Mons en Belgique.  
 J’aime concevoir des projets mêlant électronique, programmation et systèmes embarqués.
 
-Je travaille principalement avec :
+Technologies avec lesquelles je travaille principalement :
 - C / C++
 - Python
-- Arduino / ESP32
+- Arduino / ESP32 / STM32
 - Linux
 - LaTeX
 
-Je m’intéresse particulièrement :
-- aux systèmes embarqués basse consommation,
-- au développement proche du hardware,
-- à l’IoT / IIoT,
-- au competitive programming,
-- et à l’open-source.
+Centres d’intérêt principaux :
+- systèmes embarqués basse consommation,
+- développement proche du hardware,
+- IoT / IIoT,
+- competitive programming,
+- technologies open-source,
+- impression 3D,
+- électronique/hardware.
 
 ---
 
-## Technologies & outils
+## Technologies & Outils
 
 ### Langages
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
@@ -49,27 +51,44 @@ Système de potager autonome utilisant :
 - Arduino
 - DHT22
 - DS18B20
-- capteurs d’humidité du sol
+- capteurs d’humidité du sol capacitifs
 - écran LCD
 
 Fonctionnalités :
-- monitoring environnemental,
+- monitoring environnemental (température/hygrométrie),
 - automatisation de l’arrosage,
-- affichage local des données.
+- affichage local des données,
+- export en live sur Excel,
 
 ---
 
-### ⌚ Low Power Watch Project
-Développement d’une montre ultra basse consommation basée sur MSP430 :
+### ⏱️ Projet de timer connecté
+Système de timer basé sur ESP32 et les composants suivants:
+- ESP32
+- TM 1637
+- WS2812b
+- buzzer
+- RAC05 psu
+
+Fonctionnalités :
+- Barre de progression live basée sur leds adressables,
+- Indications visuelles pour palier à un environnement bruyant,
+- Temps restant/status monitorable en ligne (en local),
+- OTA flashing.
+
+---
+
+### 🎛️ Projet de contrôle à distance d'une chaine HiFi
+Système de commande basé sur deux ESP32 :
 - optimisation énergétique,
-- fonctionnement sur pile bouton,
+- alimentation sur batterie,
 - deep sleep,
-- interface UART,
-- PCB custom.
+- utilisation du protocole ESP-Now,
+.
 
 ---
 
-### 🔐 FIDO2 Hardware Security Projects
+### 🔐 Projets autour de FIDO2 et de la sécurité embarquée
 Expérimentations autour :
 - des clés matérielles FIDO2,
 - de la sécurité embarquée,
@@ -79,46 +98,47 @@ Expérimentations autour :
 
 ## Expérience
 
-### :contentReference[oaicite:2]{index=2} — R&D IIoT / Production
+### I-care — R&D IIoT / Production
 Participation à :
-- des projets de développement embarqué,
-- la gestion de bases de données,
+- des projets de développement embarqué de divers niveaux,
 - la rédaction technique,
-- l’organisation de réunions et de projets.
+- l’organisation de projets et de réunions.
 
 ---
 
 ## Competitive Programming
 
-Participation au :
+Participation à :
 - Polytech Programming Challenge
-- problèmes sur [Kattis](https://open.kattis.com?utm_source=chatgpt.com)
+- Freshmen Programming Contest (FPC)
+- problèmes sur Kattis
 
-J’aime particulièrement :
-- l’algorithmique,
-- l’optimisation,
-- les structures de données,
-- la programmation bas niveau.
+Sujets qui m’intéressent particulièrement :
+- algorithmique,
+- optimisation,
+- structures de données,
+- programmation bas niveau.
 
 ---
 
 ## Contact
 
-- 📧 hugoquintart@gmail.com
-- 💼 LinkedIn
-- 🖥️ GitHub
-- 🧠 [Kattis Profile](https://open.kattis.com?utm_source=chatgpt.com)
+- 📧 [hugoquintart@gmail.com](mailto:hugoquintart@gmail.com)
+- 💼 [LinkedIn](linkedin.com/in/hugoquintart)
+- 🖥️ [GitHub](https://github.com/HugoQuintart/)
+- 🧠 [Kattis Profile](https://open.kattis.com/users/hugo-quintart)
 
 ---
 
-## Fun facts
+## Fun Facts
 
-- 🎺 Trompettiste diplômé avec distinction
-- 🚴 Amateur de cyclisme et natation
-- 🛠️ Passionné de fabrication additive et électronique
-- 🐧 Linux user
+- 🎺 Trompettiste diplômé
+- 🚴 Amateur de cyclisme, de natation et de course à pieds 
+- 🛠️ Passionné d’électronique et de fabrication numérique
+- 🐧 Utilisateur Linux
+- 🖥️ Self taught developper
 
 ---
 
-> “Programs must be written for people to read, and only incidentally for machines to execute.”  
-> — Harold Abelson
+> “What I cannot create, I do not understand”
+> — Richard P. Feynman
