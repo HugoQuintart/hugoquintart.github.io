@@ -67,7 +67,7 @@ Système de timer basé sur ESP32 et les composants suivants:
 - ESP32
 - TM 1637
 - WS2812b
-- buzzer
+- buzzer piezo
 - RAC05 psu
 
 Fonctionnalités :
@@ -83,8 +83,7 @@ Système de commande basé sur deux ESP32 :
 - optimisation énergétique,
 - alimentation sur batterie,
 - deep sleep,
-- utilisation du protocole ESP-Now,
-.
+- utilisation du protocole ESP-Now.
 
 ---
 
@@ -97,12 +96,48 @@ Expérimentations autour :
 ---
 
 ## Expérience
+Voir mon [CV](/resources/CV.pdf)
+### I-care — Étudiant en R&D IIoT / Production
+*Août 2024 · Novembre 2024 · Juillet – Septembre 2025 · Août 2026*
 
-### I-care — R&D IIoT / Production
 Participation à :
-- des projets de développement embarqué de divers niveaux,
-- la rédaction technique,
-- l’organisation de projets et de réunions.
+- des projets de développement embarqué,
+- la rédaction de rapports techniques,
+- l’organisation et la gestion de réunions techniques.
+
+Compétences développées :
+- travail en équipe,
+- gestion de projet,
+- respect des deadlines,
+- communication technique.
+
+---
+
+### Président du comité des rhétos — Athénée Royal d’Ath
+*Septembre 2024 – Juin 2025*
+
+Responsabilités :
+- coordination d’équipe,
+- organisation d’événements,
+- gestion de projets scolaires,
+- gestion budgétaire.
+
+Résultats :
+- reconnaissance par des organes externes et les autorités communales,
+- obtention du label **Ath Event Quality**,
+- résultats positifs sur le plan humain et financier.
+
+---
+
+### Science Expo 2022 / CDIJ 2022
+*Novembre 2020 – Novembre 2022*
+
+Développement d’un potager autonome basé sur des capteurs d’humidité.
+
+Réalisations :
+- conception électronique et programmation du système,
+- présentation scientifique en anglais lors d’un congrès international en Espagne,
+- obtention du premier prix du secondaire inférieur.
 
 ---
 
@@ -124,7 +159,7 @@ Sujets qui m’intéressent particulièrement :
 ## Contact
 
 - 📧 [hugoquintart@gmail.com](mailto:hugoquintart@gmail.com)
-- 💼 [LinkedIn](linkedin.com/in/hugoquintart)
+- 💼 [LinkedIn](https://linkedin.com/in/hugoquintart)
 - 🖥️ [GitHub](https://github.com/HugoQuintart/)
 - 🧠 [Kattis Profile](https://open.kattis.com/users/hugo-quintart)
 
