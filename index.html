@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hugo Quintart</title>
+  <meta name="description" content="Hugo Quintart, étudiant ingénieur civil à la Faculté Polytechnique de Mons. Électronique embarquée, ESP32, C/C++.">
+  <meta property="og:title" content="Hugo Quintart">
+  <meta property="og:description" content="Étudiant ingénieur à la FPMs. Électronique embarquée et systèmes bas niveau.">
+  <meta property="og:url" content="https://hugoquintart.github.io/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=B612:wght@400;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-text">
+    <h1>Hugo Quintart</h1>
+    <p class="lede">
+      Étudiant ingénieur civil à la Faculté Polytechnique de Mons.
+      Je conçois des montages électroniques et j’écris le code qui tourne dessus,
+      surtout en C/C++ sur ESP32, Arduino et STM32.
+    </p>
+    <ul class="links">
+      <li><a href="mailto:hugoquintart@gmail.com">hugoquintart@gmail.com</a></li>
+      <li><a href="https://github.com/HugoQuintart/">GitHub</a></li>
+      <li><a href="https://linkedin.com/in/hugoquintart">LinkedIn</a></li>
+      <li><a href="resources/New_CV.pdf">CV (PDF)</a></li>
+    </ul>
+  </div>
+
+  <figure class="chip" aria-label="Brochage façon circuit intégré DIP-14 listant mes outils : C, C++, Python, Linux, LaTeX, algorithmique, impression 3D, IIoT, ESP-NOW, STM32, ESP32, Arduino.">
+    <svg viewBox="0 0 360 290" role="img" aria-hidden="true">
+      <g class="pins">
+        <!-- left pins 1–7 -->
+        <rect x="94" y="49" width="16" height="10"/><rect x="94" y="81" width="16" height="10"/>
+        <rect x="94" y="113" width="16" height="10"/><rect x="94" y="145" width="16" height="10"/>
+        <rect x="94" y="177" width="16" height="10"/><rect x="94" y="209" width="16" height="10"/>
+        <rect x="94" y="241" width="16" height="10"/>
+        <!-- right pins 14–8 -->
+        <rect x="250" y="49" width="16" height="10"/><rect x="250" y="81" width="16" height="10"/>
+        <rect x="250" y="113" width="16" height="10"/><rect x="250" y="145" width="16" height="10"/>
+        <rect x="250" y="177" width="16" height="10"/><rect x="250" y="209" width="16" height="10"/>
+        <rect x="250" y="241" width="16" height="10"/>
+      </g>
+
+      <rect class="body" x="110" y="30" width="140" height="240" rx="3"/>
+      <path class="notch" d="M170 30 a10 10 0 0 0 20 0 z"/>
+      <circle class="dot" cx="126" cy="46" r="4"/>
+
+      <g class="marking">
+        <text x="180" y="146" text-anchor="middle">HQ-FPMS</text>
+        <text x="180" y="166" text-anchor="middle" class="small">MONS 2026</text>
+      </g>
+
+      <g class="num" text-anchor="start">
+        <text x="116" y="58">1</text><text x="116" y="90">2</text><text x="116" y="122">3</text>
+        <text x="116" y="154">4</text><text x="116" y="186">5</text><text x="116" y="218">6</text>
+        <text x="116" y="250">7</text>
+      </g>
+      <g class="num" text-anchor="end">
+        <text x="244" y="58">14</text><text x="244" y="90">13</text><text x="244" y="122">12</text>
+        <text x="244" y="154">11</text><text x="244" y="186">10</text><text x="244" y="218">9</text>
+        <text x="244" y="250">8</text>
+      </g>
+
+      <g class="label" text-anchor="end">
+        <text x="86" y="58">C</text><text x="86" y="90">C++</text><text x="86" y="122">Python</text>
+        <text x="86" y="154">Linux</text><text x="86" y="186">LaTeX</text><text x="86" y="218">Algo</text>
+        <text x="86" y="250" class="power">GND</text>
+      </g>
+      <g class="label" text-anchor="start">
+        <text x="274" y="58" class="power">VCC</text><text x="274" y="90">Arduino</text><text x="274" y="122">ESP32</text>
+        <text x="274" y="154">STM32</text><text x="274" y="186">ESP-NOW</text><text x="274" y="218">IIoT</text>
+        <text x="274" y="250">Impr. 3D</text>
+      </g>
+    </svg>
+  </figure>
+</header>
+
+<main>
+
+  <section id="projets">
+    <h2>Projets</h2>
+
+    <article class="entry">
+      <h3>Potager autonome</h3>
+      <p>
+        Un Arduino surveille la température, l’hygrométrie et l’humidité du sol,
+        arrose quand il faut et affiche les mesures sur un écran LCD.
+        Les données partent en direct dans un tableur Excel.
+        C’est le projet qui m’a valu le premier prix à Science Expo 2022.
+      </p>
+      <p class="parts">Arduino, DHT22, DS18B20, capteurs capacitifs, LCD</p>
+    </article>
+
+    <article class="entry">
+      <h3>Minuteur connecté</h3>
+      <p>
+        Un compte à rebours pour un environnement bruyant, où un buzzer ne suffit pas :
+        une barre de LED adressables montre le temps restant d’un coup d’œil.
+        L’état est consultable sur le réseau local et le firmware se met à jour par OTA.
+      </p>
+      <p class="parts">ESP32, TM1637, WS2812B, buzzer piézo, alimentation RAC05</p>
+    </article>
+
+    <article class="entry">
+      <h3>Télécommande de chaîne hi-fi</h3>
+      <p>
+        Deux ESP32 qui se parlent en ESP-NOW. La télécommande tourne sur batterie,
+        donc tout le travail a porté sur la consommation : deep sleep entre deux appuis,
+        réveil et envoi les plus courts possible.
+      </p>
+      <p class="parts">2 × ESP32, ESP-NOW, alimentation batterie</p>
+    </article>
+
+    <article class="entry">
+      <h3>Clés FIDO2</h3>
+      <p>
+        Expérimentations autour des clés matérielles FIDO2 et de l’authentification
+        côté hardware, pour comprendre ce qui se passe réellement dans la clé.
+      </p>
+    </article>
+  </section>
+
+  <section id="experience">
+    <h2>Expérience</h2>
+
+    <article class="entry dated">
+      <p class="when">août 2024, nov. 2024, juil.–sept. 2025, août 2026</p>
+      <div>
+        <h3>I-care, Mons <span class="role">Étudiant en R&amp;D IIoT et production</span></h3>
+        <p>
+          Développement embarqué sur des projets internes, rédaction de rapports techniques,
+          organisation et animation de réunions techniques.
+        </p>
+      </div>
+    </article>
+
+    <article class="entry dated">
+      <p class="when">sept. 2024 – juin 2025</p>
+      <div>
+        <h3>Comité des rhétos, Athénée Royal d’Ath <span class="role">Président</span></h3>
+        <p>
+          Coordination de l’équipe, organisation des événements et gestion du budget.
+          L’année s’est terminée dans le vert, avec le label Ath Event Quality
+          et la reconnaissance des autorités communales.
+        </p>
+      </div>
+    </article>
+
+    <article class="entry dated">
+      <p class="when">nov. 2020 – nov. 2022</p>
+      <div>
+        <h3>Science Expo et CDIJ 2022</h3>
+        <p>
+          Conception et programmation du potager autonome, présenté en anglais lors d’un
+          congrès international en Espagne. Premier prix du secondaire inférieur.
+        </p>
+      </div>
+    </article>
+  </section>
+
+  <section id="ailleurs">
+    <h2>À côté</h2>
+    <p>
+      Je fais de la programmation compétitive : Polytech Programming Challenge,
+      Freshmen Programming Contest et des problèmes sur
+      <a href="https://open.kattis.com/users/hugo-quintart">Kattis</a>.
+      J’ai un diplôme de trompette, je roule, je nage et je cours.
+      Linux au quotidien, et presque tout ce que je sais en informatique, je l’ai appris seul.
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  <table class="cartouche">
+    <tr><th scope="row">Auteur</th><td>H. Quintart</td><th scope="row">Lieu</th><td>Mons, BE</td></tr>
+    <tr><th scope="row">Contact</th><td colspan="3"><a href="mailto:hugoquintart@gmail.com">hugoquintart@gmail.com</a></td></tr>
+    <tr><th scope="row">Révision</th><td>nov. 2026</td><th scope="row">Feuille</th><td>1/1</td></tr>
+  </table>
+</footer>
+
+</body>
+</html>

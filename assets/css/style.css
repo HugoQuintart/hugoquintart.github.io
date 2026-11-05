@@ -1,0 +1,179 @@
+/* Tokens */
+:root {
+  --paper: #f2f3ef;     /* drafting film */
+  --ink: #1d232b;       /* blue-black ink */
+  --muted: #5d636a;
+  --rule: #c7cac3;
+  --chip: #23292f;
+  --chip-mark: #b9bfc4;
+  --accent: #2647c9;    /* marker blue, links + pin 1 only */
+
+  --display: "B612", system-ui, sans-serif;
+  --text: "Source Serif 4", Georgia, serif;
+
+  --measure: 64ch;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #181c21;
+    --ink: #dde0dc;
+    --muted: #979da3;
+    --rule: #353b42;
+    --chip: #333b44;
+    --chip-mark: #8e969d;
+    --accent: #8aa2ff;
+  }
+}
+
+/* Base */
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 400 1.0625rem/1.6 var(--text);
+  font-optical-sizing: auto;
+}
+
+a { color: var(--accent); text-underline-offset: 0.18em; text-decoration-thickness: 1px; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.15; }
+
+/* Layout */
+.hero, main, footer {
+  max-width: 62rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Hero */
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 23rem);
+  gap: 3rem;
+  align-items: center;
+  padding-top: 5.5rem;
+  padding-bottom: 4rem;
+}
+
+h1 {
+  margin: 0 0 1.25rem;
+  font-size: clamp(2.6rem, 6vw, 4.2rem);
+  letter-spacing: -0.02em;
+}
+
+.lede {
+  margin: 0 0 1.75rem;
+  max-width: 34ch;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: var(--display);
+  font-size: 0.9rem;
+}
+
+/* Chip */
+.chip { margin: 0; }
+.chip svg { display: block; width: 100%; height: auto; }
+.chip .body { fill: var(--chip); }
+.chip .notch { fill: var(--paper); }
+.chip .dot { fill: var(--accent); }
+.chip .pins rect { fill: none; stroke: var(--muted); stroke-width: 1.2; }
+.chip text { font-family: var(--display); }
+.chip .marking text { fill: var(--chip-mark); font-size: 17px; font-weight: 700; letter-spacing: 0.06em; }
+.chip .marking .small { font-size: 11px; font-weight: 400; }
+.chip .num text { fill: var(--chip-mark); font-size: 9px; opacity: 0.7; }
+.chip .label text { fill: var(--ink); font-size: 13px; }
+.chip .label .power { fill: var(--muted); }
+
+/* Sections */
+section {
+  padding: 2.5rem 0 1rem;
+  border-top: 1px solid var(--rule);
+}
+
+h2 {
+  margin: 0 0 1.75rem;
+  font-size: 1.5rem;
+}
+
+section > p { max-width: var(--measure); }
+
+.entry { max-width: var(--measure); margin-bottom: 2.25rem; }
+.entry h3 { margin: 0 0 0.4rem; font-size: 1.1rem; }
+.entry p { margin: 0 0 0.5rem; }
+
+.parts {
+  font-family: var(--display);
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+/* Dated entries: date in the margin column */
+.entry.dated {
+  display: grid;
+  grid-template-columns: 11rem minmax(0, var(--measure));
+  gap: 0 2rem;
+  max-width: none;
+}
+
+.when {
+  font-family: var(--display);
+  font-size: 0.82rem;
+  color: var(--muted);
+  padding-top: 0.2rem;
+}
+
+.role {
+  display: block;
+  margin-top: 0.2rem;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+/* Footer title block */
+footer { padding-top: 2rem; padding-bottom: 3rem; }
+
+.cartouche {
+  margin-left: auto;
+  border-collapse: collapse;
+  font-family: var(--display);
+  font-size: 0.78rem;
+}
+
+.cartouche th, .cartouche td {
+  border: 1px solid var(--ink);
+  padding: 0.35rem 0.7rem;
+  text-align: left;
+}
+
+.cartouche th { font-weight: 400; color: var(--muted); }
+
+/* Small screens */
+@media (max-width: 760px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 2.5rem;
+  }
+  .chip { max-width: 22rem; }
+  .entry.dated { grid-template-columns: 1fr; }
+  .when { margin-bottom: 0.25rem; padding-top: 0; }
+  .cartouche { margin-left: 0; width: 100%; }
+}
